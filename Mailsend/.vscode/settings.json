@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/325250f8-0d0c-42b1-a0bf-d0e4d3e21c0a/resourceGroups/LimoncelloPages/providers/Microsoft.Web/sites/CuponesLimoncelloBE",
+    "appService.deploySubpath": "backend"
+}

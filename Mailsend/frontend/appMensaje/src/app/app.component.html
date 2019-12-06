@@ -1,0 +1,80 @@
+<!--<div class="container mt-5" id="ContenedorForm">
+  <h2>Formulario de contacto</h2>
+  <form (ngSubmit)="contactForm(form.value)" #form="ngForm">
+
+    <div class="form-group">
+      <label class="label-input100">Cedula:</label>
+      <input type="text" class="input100" name="cedula" ngModel>
+    </div>
+
+    <div class="form-group">
+      <label>Nombre:</label>
+      <input type="text" class="form-control" name="nombre" ngModel>
+    </div>
+
+    <div class="form-group">
+      <label>Correo:</label>
+      <input type="text" class="form-control" name="email" ngModel>
+    </div>
+
+    <div class="form-group">
+      <label>Asunto:</label>
+      <input type="hidden" class="form-control" value="Cupon Limoncello" name="asunto" ngModel>
+    </div>
+
+    <div class="form-group">
+      <label>Codigo del Cupon:</label>
+      <input type="text" class="form-control" name="codigo" ngModel>
+    </div>
+
+    <div class="form-group">
+      <label>Mensaje Adicional:</label>
+      <textarea class="form-control" cols="30" rows="6" name="mensaje" ngModel></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+-->
+
+<body>
+  <div class="container">
+    <form id="contact" (ngSubmit)="contactForm(form.value)" #form="ngForm">
+      <img class="logomiedo" src="../assets/imagenes/logo limoncello sin fondo.png">
+      <h3></h3>
+      <h4>Envíanos tus datos para validar tu cupón</h4>
+      <fieldset>
+        <input placeholder="Cédula" type="text" class="input100" name="cedula" ngModel tabindex="1" required autofocus>
+      </fieldset>
+
+      <fieldset>
+        <input placeholder="Nombre y Apellido" type="text" class="input100" name="nombre" ngModel tabindex="2" required>
+      </fieldset>
+
+      <fieldset>
+        <input placeholder="Correo" type="text" class="form-control" name="email" ngModel tabindex="3" required>
+      </fieldset>
+
+      <fieldset>
+        <input type="hidden" value="Cupon_Limoncello" name="asunto" ngModel>
+      </fieldset>
+
+      <fieldset>
+        <input placeholder="Código de Cupón" type="text" class="form-control" name="codigo" ngModel tabindex="4"
+          required>
+      </fieldset>
+
+      <fieldset>
+        <textarea placeholder="Agrega un mensaje adicional..." class="form-control" name="mensaje" ngModel tabindex="5"
+          required></textarea>
+      </fieldset>
+
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+      </fieldset>
+      <p class="copyright">Designed by :<a style="color: #157a3f;" target="_blank" title="Creado por:"> Krystel Mena &
+          Joel Leiton </a></p>
+    </form>
+  </div>
+
+</body>
